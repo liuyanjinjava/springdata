@@ -47,6 +47,13 @@
           <artifactId>hibernate-entitymanager</artifactId>
           <version>5.3.6.Final</version>
       </dependency>
+      <!-- https://mvnrepository.com/artifact/com.mysema.querydsl/querydsl-jpa -->
+      <!-- https://mvnrepository.com/artifact/com.querydsl/querydsl-jpa -->
+      <dependency>
+          <groupId>com.querydsl</groupId>
+          <artifactId>querydsl-jpa</artifactId>
+          <version>4.2.1</version>
+      </dependency>
   </dependencies>
 
 </project>
