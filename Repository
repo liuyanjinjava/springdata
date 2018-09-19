@@ -1,0 +1,21 @@
+Repository类的定义：
+public interface Repository<T,ID extends Serializable>{
+
+}
+1）Repository 是一个空接口，标记接口；
+没有包含方法声明的接口就是一个标记接口；
+
+2）如果我们定义的接口 EmployeeRepository extends Repository<Employee,Integer>
+
+3）如果我们自己的接口没有extends Repository，运行时会报错；
+org.springframework.beans.factory.NoSuchBeanDefinitionException:
+No qualifying bean of type 'com.lyj.repository.EmployeeRepository' available
+
+4)对于按照方法命名规则来使用的话，有弊端；
+1）方法名会比较长：约定大于配置
+2）对于一些复杂的查询，是很难实现的；
+
+@Query
+事务在Spring data中的使用；
+1）事务一般是在Service层中；
+2）@Query @Modifying @Transactional的综合使用
