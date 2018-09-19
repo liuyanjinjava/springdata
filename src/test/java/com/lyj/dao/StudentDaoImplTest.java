@@ -19,4 +19,14 @@ public class StudentDaoImplTest {
                     ", age"+student.getAge());
         }
     }
+
+    @Test
+    public void testSave() {
+        StudentDao studentDao=new StudentDaoImpl();
+        Student student=new Student();
+        student.setName("test");
+        student.setAge(30);
+
+        studentDao.save(student);
+    }
 }

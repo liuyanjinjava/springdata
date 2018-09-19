@@ -17,4 +17,10 @@ public interface StudentDao {
      * @return 所有学生
      */
     public List<Student> query();
+
+    /**
+     * 添加一个学生
+     * @param student 待添加的学生
+     */
+    public void save(Student student);
 }
